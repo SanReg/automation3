@@ -290,7 +290,7 @@ async function processAndUploadPDF(pdfUrl, fileName) {
 }
 async function getToken() {
     try {
-        const response = await axios.get('http://98.70.28.48:3000/token');
+        const response = await axios.get('http://64.188.67.20:3000/token');
         const token = response.data.trim().replace(/\r?\n/g, '');
         console.log('Token fetched successfully');
         return token;
@@ -303,7 +303,7 @@ async function getToken() {
 // Function to get cookie from GitHub
 async function getCookie() {
     try {
-        const response = await axios.get('http://98.70.28.48:3000/cookie');
+        const response = await axios.get('http://64.188.67.20:3000/cookie');
         const cookie = response.data.trim().replace(/\r?\n/g, '');
         console.log('Cookie fetched successfully');
         return cookie;
