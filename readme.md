@@ -16,3 +16,8 @@ docker run -d \
   -v $(pwd)/temp:/usr/src/app/temp \
   --restart unless-stopped \
   automation3
+
+
+  After update;
+  git pull
+  git build -t automation3 .
